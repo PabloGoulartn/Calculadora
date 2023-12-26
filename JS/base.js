@@ -10,5 +10,5 @@ buttons.forEach(function(button)
 
 function showButton(buttonText)
 {
-    document.querySelector('p').innerHTML += buttonText;
+    document.querySelector('input').value += buttonText;
 }

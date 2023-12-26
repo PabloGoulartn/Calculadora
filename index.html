@@ -4,24 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/base.css">
 </head>
 <body>
     <main>
-        <p></p>
-        <section>
-            <button type="button">7</button>
-            <button type="button">8</button>
-            <button type="button">9</button>
-            <button type="button">4</button>
-            <button type="button">5</button>
-            <button type="button">6</button>
-            <button type="button">1</button>
-            <button type="button">2</button>
-            <button type="button">3</button>
-            <button type="button">0</button>
-            <button type="button">.</button>
-            <button type="button">C</button>
-        </section>
+        <div class="calculator-container">
+            <section class="display-section">
+                <input type="text" name="" class="input-display">
+            </section>
+
+            <section class="operation-buttons">
+                <button type="button" class="btn-sign">+</button>
+                <button type="button" class="btn-sign">-</button>
+                <button type="button" class="btn-sign">x</button>
+                <button type="button" class="btn-sign">/</button>
+            </section>
+
+            <section class="numeric-buttons">
+                <button type="button" class="btn">7</button>
+                <button type="button" class="btn">8</button>
+                <button type="button" class="btn">9</button>
+                <button type="button" class="btn">4</button>
+                <button type="button" class="btn">5</button>
+                <button type="button" class="btn">6</button>
+                <button type="button" class="btn">1</button>
+                <button type="button" class="btn">2</button>
+                <button type="button" class="btn">3</button>
+                <button type="button" class="btn">0</button>
+                <button type="button" class="btn">.</button>
+                <button type="button" class="btn">C</button>
+            </section>
+
+            <aside>
+                <button type="button" class="equal-button">=</button>
+            </aside>
+        </div>
     </main>
     <script src="JS/base.js"></script>
 </body>
