@@ -1,10 +1,87 @@
-*
-{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
-body{
-    
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    width: 250px;
+    height: 350px;
+    background-color: #494949;
+    display: grid;
+    grid-template-columns: 187px 63px;
+    grid-template-rows: 70px 50px 230px;
+    gap: 0.5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.322);
+    border-radius: 12px;
+}
+
+.display-section {
+    width: 100%;
+    height: 100%;
+    grid-column: 1 / -1;
+}
+
+.calculator-display {
+    width: 100%;
+    height: 100%;
+    background-color: #222222;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.operator-buttons {
+    width: 100%;
+    grid-column: 1 / -1;
+    height: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Definindo 3 colunas iguais */
+    grid-gap: 0; /* Removendo o espaçamento entre as células */
+    gap: 1px;
+}
+
+.btn{
+    cursor: pointer;
+}
+
+.operator-btn {
+    width: 100%;
+    height: 50px;
+}
+
+.numeric-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0;
+    width: 100%;
+    gap: 1px;
+}
+
+.numeric-btn {
+    width: 100%;
+    height: 100%;
+}
+
+.border-btn{
+    border-bottom-left-radius: 12px;
+}
+
+.equals-button {
+    grid-column: 2;
+    width: 100%;
+    height: 100%;
+}
+
+.equals-btn {
+    width: 100%;
+    height: 100%;
+    background-color: #ff722b;
+    border-bottom-right-radius: 12px;
 }
